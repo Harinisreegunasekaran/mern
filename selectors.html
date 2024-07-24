@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-width:2px;
+            font-size: 30px;
+            width: 9cm;
+            height: 7cm;
+        }
+        tr#a:hover
+        {
+            background-color:rgb(171, 36, 171);
+        }
+        tr#b:hover
+        {
+            background-color: orangered;
+        }
+        tr#c:hover{
+            background-color: green;
+        }
+        tr>th{
+            color: rgb(29, 6, 202);
+        }
+        
+        h1{
+            border: 5px solid rgb(243, 33, 68);
+            margin-left: 15cm;
+            width:10cm;
+            background-color: rgb(41, 41, 203);
+            margin-top: 3cm;
+            color: yellow;
+        }
+        div{
+            border:5px solid green;
+            padding-bottom:  5cm;
+        }
+    </style>
+</head>
+<body >
+    
+    <table border="">
+        <tr id="a">
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Dept</th>
+        </tr>
+        <tr id="b">
+            <td>1</td>
+            <td>Ajay</td>
+            <td>ECE</td>
+        </tr>
+        <tr id="c">
+            <td>2</td>
+            <td>Anu</td>
+            <td>EEE</td>
+        </tr>
+        <tr id="b">
+            <td>3</td>
+            <td>Abi</td>
+            <td>Civil</td>
+        </tr>
+        <tr id="c">
+            <td>4</td>
+            <td>Hari</td>
+            <td>ECE</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <div>
+    <h1 >Welcome to the class!</h1>
+    </div>
+</body>
+</html>

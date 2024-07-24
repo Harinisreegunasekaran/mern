@@ -26,6 +26,44 @@
             border-color: black;
             border-width: 12px;
         }
+        
+
+   
+   .item1 {
+     grid-area: header;
+    }
+   .item2 {
+     grid-area: menu;
+     }
+   .item3 { 
+    grid-area: main;
+    }
+   .item4 {
+     grid-area: right;
+     }
+   .item5 {
+     grid-area: footer; 
+    }
+   
+   .grid-container {
+
+     display: grid;
+     grid-template-areas:
+       'header header header header header header'
+       'menu main main main right right'
+       'menu footer footer footer footer footer';
+     gap: 2px;
+     background-color: #080909;
+     padding: 10px;
+   }
+   
+   .grid-container > div {
+     background-color: rgba(255, 255, 255, 0.8);
+     text-align: center;
+     padding: 20px 0;
+     font-size: 30px;
+   }
+   
     </style>
 </head>
 <body>
@@ -112,5 +150,19 @@
         <source srcset="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?cs=srgb&dl=pexels-pixabay-45853.jpg&fm=jpg" media="(min-width: 600px)"/>
         <img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/06/wildlife-photo-tips-01.jpg?resize=1500%2C1000&ssl=1" alt="example"/>
       </picture>
+
+<h1>Grid Layout</h1>
+
+
+<div class="grid-container">
+  <div style="background-color: sandybrown;" class="item1">1</div>
+  <div style="background-color: grey;"class="item2">2</div>
+  <div style="background-color: rgb(97, 170, 215);"class="item3">3</div>  
+  <div style="background-color: pink;"class="item4">4</div>
+  <div style="background-color: lightgreen;"class="item5">5</div>
+</div>
+
+</body>
+</html>
 </body>
 </html>
