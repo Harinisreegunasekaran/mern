@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern</title>
+    <style>
+        #all{
+            width: 100%;
+            overflow: hidden;
+        }
+        #box1,#box2,#box3,#box4{
+            float: left;
+            width: 25%;
+            height: 100px;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color:yellow;
+        }
+        #box4{
+            background-color: green;
+        }
+        @media screen and (max-width:1000px)
+        {
+            #box1,#box2,#box3,#box4{
+                width:50%;
+            }
+            #box3,#box4{
+                margin-top: 0;
+            }
+        }
+        
+        @media screen and (max-width:600px)
+        {
+            #box1,#box2,#box3,#box4{
+                width:100%;
+                margin-top: 0;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MEDIA</h1><br>
+    <div id="all">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    </div>
+</body>
+</html>

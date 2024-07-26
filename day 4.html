@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <style>
+    #fixed{
+    position: fixed;
+    margin-left: 16cm;
+   }
+   #sticky{
+    position: sticky;
+    margin-left: 10cm;
+    top:1cm;
+   }
+   h1{
+    color: blue;
+   }
+   @media print{
+    h1{
+        color: red;
+    }
+   }
+   #div1{
+    width: 20cm;
+    height: 1cm;
+    background-color: red;
+   }
+   @media screen and (min-width:800px)
+   {
+    h1{
+        color: rgb(49, 213, 16);
+    }
+    #div1{
+        background-color: blue;
+    }
+    
+   }
+   @media screen and (max-width:300px)
+   {
+    h1{
+        color: rgb(182, 30, 164);
+    }
+    #div1{
+        background-color: gold;
+    }
+    
+   }
+   @media screen and (max-width:300px)
+   {
+    #img1{
+        float: none;
+        display: block;
+    }
+    #p2{
+        position: static;
+        clear: both;
+    }
+   }
+   #img1{
+    width: 8cm;
+    float: left;
+   }
+   #p2{
+      position: relative;
+      top: 40px;
+      margin-left: 3cm;
+   }
+
+
+
+    </style>
+    </head>
+<body>
+    
+<h2 id="fixed">FIXED </h2>
+<h3 id="sticky">STICKY</h3>
+<h1>Welcome</h1>
+<div id="div1">
+</div><br><br>
+<img id="img1" src="bird.jpg">
+<p id="p2">Birds are warm-blooded, egg-laying vertebrates with feathers, beaks, and typically, the ability to fly. They inhabit diverse environments, from the poles to tropical forests. Birds play crucial roles in ecosystems, aiding in pollination, seed dispersal, and pest control. Their varied songs and calls are vital for communication and mating.</p>
+<br><br>
+</body>
+</html>

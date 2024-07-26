@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        
+    .div1{
+        height: 5cm;
+        width: 5cm;
+        background-color: rgb(206, 45, 72);
+        transition-property: width;
+        transition-duration: 3s;
+    }
+    .div1:hover{
+        width: 300px;
+    }
+    .div2{
+        
+        height: 5cm;
+        width: 5cm;
+        background-color: rgb(49, 145, 189);
+        transition-property: transform;
+        transition-duration: 3s;
+    }
+    .div2:hover{
+        transform: rotate(180deg);
+    }
+    h1{
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>TRANSITION</h1>
+    <div class="div1"></div><br><br>
+    <div class="div2"></div>
+</body>
+</html>
